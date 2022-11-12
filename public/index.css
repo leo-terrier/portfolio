@@ -1,0 +1,410 @@
+:root {
+  --red: #ee6352ff;
+  --greenSaturated: hsl(148, 84%, 58%);
+  --green: #59cd90ff;
+  --blueSaturated: hsl(199, 85%, 74%);
+  --blue: #3fa7d6ff;
+  --yellow: #fac05eff;
+  --orangeSaturated: hsl(13, 98%, 74%);
+  --orange: #f79d84ff;
+  --lightOrange: hsl(13, 98%, 84%);
+  --darkBlue: rgb(4, 12, 20);
+  --deepBlueOpac: rgba(8, 15, 25, 0.8);
+  --darkBlueMidOpac: rgba(9, 18, 20, 0.75);
+  --deepBlueMidOpac: rgba(10, 26, 46, 0.5);
+  --lightDeepBlueMidOpac: rgba(17, 35, 64, 0.5);
+  --gray: #d2d2dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: white;
+}
+
+html {
+  height: 100%;
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("./backgroundImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+
+aside {
+  height: 100vh;
+  position: fixed;
+  width: 10%;
+  text-align: center;
+}
+.homeButtonGreaterDiv {
+  background-color: var(--darkBlue);
+  padding: 40px 0px;
+}
+
+.homeButtonContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.logoContainer {
+  margin: 0 auto 40px auto;
+  width: 80%;
+}
+
+.logoContainer img {
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+}
+
+.homeButtonContainer > p:nth-child(3) {
+  font-size: 1.3rem;
+  color: var(--gray);
+}
+
+.homeButtonContainer > p:nth-child(2) {
+  font-size: 4rem;
+  font-family: "Rampart One", cursive;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+nav {
+  height: 100%;
+  background-color: var(--deepBlueOpac);
+}
+
+nav div {
+  border-top: 1px solid var(--gray);
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+nav div:first-child {
+  border-top: none;
+}
+
+nav div:first-child a {
+  color: transparent;
+}
+
+nav div a {
+  text-decoration: none;
+}
+
+nav div:last-child {
+  border-bottom: 1px solid var(--gray);
+}
+
+.sectionContainer {
+  height: 100%;
+  overflow: auto;
+  width: 90%;
+  margin-left: 10%;
+}
+.section {
+  margin: 0 auto;
+  padding-top:5%;
+  width:90%;
+}
+.section:first-of-type{
+  height: 88vh;
+}
+section {
+  height:100%;
+  background-color: var(--deepBlueMidOpac);
+  margin: 0 auto;
+  width: 90%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.timelineGreaterDiv {
+  display: flex;
+  height: 80%;
+  width: 50%;
+  justify-content: center;
+}
+
+#dateContainer {
+  position:relative;
+  height:100%
+
+
+}
+.date {
+  color: var(--greenSaturated);
+  font-size: 1.2rem;
+  font-weight: 600;
+  left:30px;
+  position:absolute;
+}
+
+
+.date:nth-of-type(1){
+top :0%
+}
+.date:nth-of-type(2){
+top:33.33%
+}
+.date:nth-of-type(3){
+top:66.66%
+}
+.date:nth-of-type(4){
+top:100%
+}
+
+.timelineContainer {
+  position: relative;
+  width: 80px;
+  height:100%;
+}
+#timeline {
+  width: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height:100%
+}
+
+#timeline img {
+  max-height: 100%;
+  width:auto;
+}
+
+.dateCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 1px solid var(--darkBlue);
+}
+
+.dateCircle:hover{
+  box-shadow: 0 0 20px 8px var(--greenSaturated)
+
+}
+.tooltip {
+  position: "relative";
+  height: 100%;
+  width: 100%;
+}
+.tooltip > span{
+  content: attr(data-text); /* here's the magic */
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:100%;
+  margin-left:15px;
+  width:250px;
+  padding:20px;
+  border-radius:10px;
+  background:var(--darkBlue);
+  color: var(--gray);
+  text-align:left;
+  display:none;
+  line-height: 1.5;
+  font-weight: light;
+  z-index: 1;
+}
+.tooltip:after {
+  content: "";
+  position:absolute;
+
+  /* position tooltip correctly */
+  left:100%;
+  margin-left:-5px;
+
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+
+  /* the arrow */
+  border:10px solid #000;
+  border-color: transparent black transparent transparent;
+  display:none;
+}
+
+.tooltip:hover > span , .tooltip:hover:after{
+  display:block;
+}
+
+.justice {
+  top: 8%;
+  background-image: url("./justice.png");
+}
+
+.acasi {
+  top: 38%;
+  background-image: url("./acasi.png");
+}
+
+.codecademy {
+  top: 72%;
+  background-image: url("./codecademy.png");
+  border: 1px solid white
+}
+
+.wild {
+  top: 85%;
+  background-image: url("./wild.png");
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.timeEvents {
+  position: relative;
+}
+
+.small {
+  font-size: .9rem;
+}
+
+.timeEvent {
+  position: absolute;
+  display:flex;
+}
+.eventLeft {
+  width:230px;
+  text-align: right;
+}
+.eventRight {
+  width:200px;
+}
+.eventLeft .timeEvent {
+right:-10px
+}
+
+.timeEvents p:nth-child(2){
+  margin-left: 10px;
+  color: var(--gray)
+}
+
+.firstLines {
+  top: 61%;
+  left: -20px
+}
+
+.portfolio1{
+  top: 80%
+}
+.portfolio2{
+  top:90%
+}
+
+.sectionText{
+  background-color: var(--darkBlueMidOpac);
+  padding:30px;
+  width:50%;
+  min-height:100%;
+  box-sizing: border-box;
+}
+.sectionText p{
+  color: var(--gray);
+  line-height: 1.5;
+  margin-top: 1rem;
+
+}
+ h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+ h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+#about section{
+  display:flex;
+  justify-content: space-between;
+}
+
+.blue {
+  color: var(--blueSaturated)
+}
+
+.orange {
+  color: var(--orange)
+}
+.yellow {
+  color: var(--yellow)
+}
+
+.timeEventProject {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.green {
+  color: var(--greenSaturated)
+}
+
+/* ///// Section 2 : technical stack / skills //////*/
+
+#skills {
+  flex-direction: column;
+  padding:3rem;
+}
+
+#skills h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.stacksContainer {
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.stackContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stackLogoContainer{
+  max-width: 60px;
+  margin-bottom: .4rem;
+}
+.stackLogoContainer img {
+  max-width: 100%;
+}
+.stackLogoContainer p{
+  text-align: center;
+}
+
+#skills > p {
+  margin-top: 3rem;
+}
+
+/* ///// portfolio section //// */
+.gifContainer {
+  width: 40%;
+  border-radius: 20px;
+  border: var(--blueSaturated)
+}
+.gifContainer img{
+  max-width: 100%;
+}
