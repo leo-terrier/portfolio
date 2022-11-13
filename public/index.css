@@ -1,6 +1,6 @@
 :root {
   --red: #ee6352ff;
-  --greenSaturated: hsl(148, 84%, 58%);
+  --greenSaturated: #3aee8e;
   --green: #59cd90ff;
   --blueSaturated: hsl(199, 85%, 74%);
   --blue: #3fa7d6ff;
@@ -11,7 +11,9 @@
   --darkBlue: rgb(4, 12, 20);
   --deepBlueOpac: rgba(8, 15, 25, 0.8);
   --darkBlueMidOpac: rgba(9, 18, 20, 0.75);
+  --darkBlueveryOpac: rgba(9, 18, 20, 0.95);
   --deepBlueMidOpac: rgba(10, 26, 46, 0.5);
+  --deepBlueVeryOpac: rgba(10, 26, 46, 0.90);
   --lightDeepBlueMidOpac: rgba(17, 35, 64, 0.5);
   --gray: #d2d2dc;
 }
@@ -30,7 +32,7 @@ html {
 }
 
 body {
-  background-image: url("./backgroundImage.jpg");
+  background-image: url("./otherLogoAndImg/backgroundImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,16 +45,15 @@ main {
   position: relative;
 }
 
-
 aside {
   height: 100vh;
   position: fixed;
-  width: 10%;
+  width: 154px;
   text-align: center;
 }
 .homeButtonGreaterDiv {
   background-color: var(--darkBlue);
-  padding: 40px 0px;
+  padding: 30px 0px;
 }
 
 .homeButtonContainer {
@@ -60,7 +61,7 @@ aside {
   margin: 0 auto;
 }
 .logoContainer {
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
   width: 80%;
 }
 
@@ -70,16 +71,19 @@ aside {
   min-width: 100%;
 }
 
+.name {
+  font-family: "Praise", cursive;
+  color:var(--yellow);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
 .homeButtonContainer > p:nth-child(3) {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--gray);
 }
 
-.homeButtonContainer > p:nth-child(2) {
-  font-size: 4rem;
-  font-family: "Rampart One", cursive;
-  margin-top: 25px;
-  margin-bottom: 10px;
+.orange {
+  color: var(--orange)
 }
 nav {
   height: 100%;
@@ -92,18 +96,6 @@ nav div {
   padding: 1rem;
 }
 
-nav div:first-child {
-  border-top: none;
-}
-
-nav div:first-child a {
-  color: transparent;
-}
-
-nav div a {
-  text-decoration: none;
-}
-
 nav div:last-child {
   border-bottom: 1px solid var(--gray);
 }
@@ -111,17 +103,21 @@ nav div:last-child {
 .sectionContainer {
   height: 100%;
   overflow: auto;
-  width: 90%;
-  margin-left: 10%;
+  margin-left: 154px;
 }
 .section {
   margin: 0 auto;
-  padding-top:5%;
-  width:90%;
+  padding:5% 0;
+ /*  width:90%;
+  max-*/width: 1150px;
 }
+
+/* //// About section  ///// */
+
 .section:first-of-type{
   height: 88vh;
 }
+
 section {
   height:100%;
   background-color: var(--deepBlueMidOpac);
@@ -137,15 +133,15 @@ section {
   display: flex;
   height: 80%;
   width: 50%;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #dateContainer {
   position:relative;
   height:100%
-
-
 }
+
+
 .date {
   color: var(--greenSaturated);
   font-size: 1.2rem;
@@ -251,23 +247,23 @@ top:100%
 
 .justice {
   top: 8%;
-  background-image: url("./justice.png");
+  background-image: url("./otherLogoAndImg/justice.png");
 }
 
 .acasi {
   top: 38%;
-  background-image: url("./acasi.png");
+  background-image: url("./otherLogoAndImg/acasi.png");
 }
 
 .codecademy {
   top: 72%;
-  background-image: url("./codecademy.png");
+  background-image: url("./otherLogoAndImg/codecademy.png");
   border: 1px solid white
 }
 
 .wild {
   top: 85%;
-  background-image: url("./wild.png");
+  background-image: url("./otherLogoAndImg/wild.png");
 }
 
 .bold {
@@ -281,13 +277,16 @@ top:100%
 .small {
   font-size: .9rem;
 }
+.vSmall {
+  font-size: .8rem;
+}
 
 .timeEvent {
   position: absolute;
   display:flex;
 }
 .eventLeft {
-  width:230px;
+  width:200px;
   text-align: right;
 }
 .eventRight {
@@ -319,6 +318,7 @@ right:-10px
   padding:30px;
   width:50%;
   min-height:100%;
+  max-height:100%;
   box-sizing: border-box;
 }
 .sectionText p{
@@ -327,15 +327,18 @@ right:-10px
   margin-top: 1rem;
 
 }
+
  h2 {
   font-weight: bold;
-  font-size: 2rem;
-}
- h3 {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.85rem;
 }
 
+
+ h3 {
+  font-weight: bold;
+  font-size: 1.65rem;
+}
 
 #about section{
   display:flex;
@@ -346,16 +349,22 @@ right:-10px
   color: var(--blueSaturated)
 }
 
-.orange {
-  color: var(--orange)
-}
 .yellow {
   color: var(--yellow)
 }
 
+.red {
+  color: var(--red)
+}
+
+.underline {
+  text-decoration: underline;
+}
+.noUnderline {
+  text-decoration: none;
+}
 .timeEventProject {
   font-weight: 600;
-  text-decoration: underline;
 }
 
 .green {
@@ -373,6 +382,11 @@ right:-10px
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
 }
+#skills h3:first-of-type {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
 .stacksContainer {
   width:100%;
   display:flex;
@@ -400,11 +414,229 @@ right:-10px
 }
 
 /* ///// portfolio section //// */
-.gifContainer {
-  width: 40%;
-  border-radius: 20px;
-  border: var(--blueSaturated)
+
+#portfolio {
+  flex-direction: column;
+  padding: 3rem;
 }
-.gifContainer img{
-  max-width: 100%;
+
+.gifsContainer {
+  display:flex;
+  justify-content: space-evenly;
+  width:100%
+}
+
+.gifContainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio  h3{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.gifContainer {
+  display:flex;
+  flex-direction: column;
+}
+
+.gif {
+  height: 330px;
+  width:372px;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+  overflow: hidden;
+}
+
+.gifContainer:first-of-type h3 {
+  color: var(--blueSaturated)
+}
+.rampart {
+  font-family: "Rampart One";
+}
+
+
+#dealfindergif {
+  background-image: url("./gifs/dealfinderGif.gif");
+  border: 2px solid var(--blueSaturated);
+}
+
+#decodagegif {
+  background-image: url("./gifs/decodagegif.gif");
+  border: 2px solid var(--red);
+}
+
+span {
+  color: inherit;
+}
+
+.projectLogoContainer {
+  width:35px;
+}
+.gifContainer img {
+  width:60px;
+}
+
+#project1span {
+  font-family: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+#project2span {
+  font-family: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gifText {
+  position:absolute;
+  transition: .5s;
+  bottom:-100%;
+  border-radius: 0;
+  padding: 1rem 1.4rem;
+  box-sizing: border-box;
+  height:67%;
+}
+
+#gifTextInnerDiv{
+  position:relative;
+}
+#gifTextInnerDiv > button {
+  position:absolute;
+  bottom:0;
+  right:-14px;
+  z-index: 2;
+  height: 25px;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  background-color: transparent;
+}
+
+#githubLogo{
+  max-height: 100%;
+  width: auto;
+  z-index: 3;
+}
+
+.gif:hover > .gifText {
+bottom: 0%;
+background-color: var(--deepBlueVeryOpac);
+}
+
+
+.gifText p{
+  color: inherit;
+  margin: .5rem 0
+}
+
+#visitNowDeal {
+  font-size: 1.45rem;
+  color: var(--blueSaturated);
+  text-align: center;
+  position: relative;
+  display:table;
+  margin: auto;
+}
+
+#visitNowDeal span {
+  position: absolute;
+  top: -4px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+}
+
+@keyframes bounce{
+  100%{
+    top: 0;
+  }
+}
+
+#visitNowDeal:hover > a, #visitNowDeal:hover span,
+#tryDecodage:hover > a, #tryDecodage:hover span  {
+  color:var(--green);
+}
+
+#tryDecodage {
+  font-size: 1.45rem;
+  color: var(--greenSaturated);
+  text-align: center;
+  position: relative;
+  display:table;
+  margin: auto;
+}
+
+#tryDecodage span {
+  position: absolute;
+  top: -4px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+}
+
+.projectStackDiv {
+  display:flex;
+  flex-direction: column;
+}
+
+/* /// contact section // */
+#contactSection {
+  height: 300px;
+  align-items: stretch;
+}
+#contact {
+  height:100%
+}
+.contactInfoContainer {
+  width: 50%;
+  min-height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px
+}
+
+.contactInfoContainer div {
+  display:flex;
+  min-width: 300px;
+  max-width: 300px;
+  padding:15px 20px;
+  background-color: var(--darkBlue);
+  border-radius: 30px;
+  justify-content: center;
+  gap:20px;
+}
+
+h4 {
+  font-size:1.4rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.projectStackDiv  {
+  width:80%;
+  margin: 0 auto;
+}
+.projectStackDiv p {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .section {
+    width: 90%
+  };
+  #sills, #portefolio{
+    padding:2rem;
+  }
+  .timeEvents {
+    display:none
+  }
+
 }

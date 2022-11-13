@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portefolio website</title>
+    <title>My portfolio website</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lilita+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Engagement&family=Fredoka+One&family=Lilita+One&family=M+PLUS+1+Code:wght@500&family=Praise&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@400;700&family=Yesteryear&display=swap"
       rel="stylesheet" />
   </head>
   <body>
@@ -20,15 +21,15 @@
             <div class="logoContainer">
               <img src="./logo.png" />
             </div>
-            <p>Léo</p>
+            <p class="name">Léo Terrier</p>
             <p>Junior Web <br />developer</p>
           </div>
         </div>
         <nav>
-          <div><a href="#aboutSection">About</a></div>
-          <div><a href="#skills">Skills</a></div>
-          <div><a href="#portfolio">Portefolio</a></div>
-          <div><a href="#contact">Contact</a></div>
+          <div><a class="noUnderline" href="#aboutSection">About</a></div>
+          <div><a class="noUnderline" href="#skillsSection">Skills</a></div>
+          <div><a class="noUnderline" href="#portfolioSection">Portfolio</a></div>
+          <div><a class="noUnderline" href="#contactSection">Contact</a></div>
         </nav>
       </aside>
       <div class="sectionContainer">
@@ -43,11 +44,11 @@
               </div>
               <div class="timeEvents eventLeft small">
                 <div class="timeEvent portfolio1">
-                  <p>Deployment of my <a class="timeEventProject blue">first portefolio project</a>.</p>
+                  <p>Deployment of my <a class="timeEventProject blue">first portfolio project</a>.</p>
                   <p>→</p>
                 </div>
                 <div class="timeEvent portfolio2">
-                  <p>Deployment of my <a class="timeEventProject orange">second portefolio project</a>.</p>
+                  <p>Deployment of my <a class="timeEventProject red ">second portfolio project</a>.</p>
                   <p>→</p>
                 </div>
               </div>
@@ -78,7 +79,7 @@
                     ></div
                   ></div
                 >
-                <div id="timeline"><img src="./arrow.png" /></div>
+                <div id="timeline"><img src="./otherLogoAndImg/arrow.png" /></div>
               </div>
               <div class="timeEvents eventRight small">
                 <div class="timeEvent firstLines"> <p>←</p><p>First lines of code (in Python)</p></div>
@@ -86,7 +87,7 @@
             </div>
             <div class="sectionText">
               <h2 class="yellow">About myself</h2>
-              <p>Hello! Welcome to my portefolio website </p>
+              <p>Hello! Welcome to my portfolio website </p>
               <p>My name is Leo, and I'm web development apprentice based in Paris</p>
               <p
                 >After completing 5 years in Law school, I've worked in a startup company specialized in accounting for freelance, which gave me the idea of becoming a web
@@ -100,7 +101,7 @@
             </div>
           </section>
         </div>
-        <div class="section">
+        <div class="section" id="skillsSection">
           <section id="skills">
             <h2 class="yellow">Technical stack</h2>
             <h3 class="green">Frontend</h3>
@@ -179,9 +180,9 @@
                 <div class="stackLogoContainer">
                   <img src="./stackLogo/django.png" />
                 </div>
-                <p>Django <span class="orange">*</span></p></p>
+                <p>Django <span class="orange">*</span></p>
               </div>
-             </div>
+            </div>
             <h3 class="green">Other</h3>
             <div class="stacksContainer">
               <div class="stackContainer">
@@ -218,27 +219,101 @@
                 <div class="stackLogoContainer">
                   <img src="./stackLogo/AWS.png" />
                 </div>
-                <p>AWS <span class="orange">*</span></p></p>
+                <p>AWS <span class="orange">*</span></p>
               </div>
               <div class="stackContainer">
                 <div class="stackLogoContainer">
                   <img src="./stackLogo/heroku.png" />
                 </div>
-                <p>Heroku <span class="orange">*</span></p></p>
+                <p>Heroku <span class="orange">*</span></p>
               </div>
             </div>
-            <p class=" small"><span class="orange">*</span> Basic knowledge</p>
+            <p class="small"><span class="orange">*</span> Basic knowledge</p>
           </section>
         </div>
-        <div class="section">
+        <div class="section" id="portfolioSection">
           <section id="portfolio">
-            <h2 class="yellow">Portfolio</h2>
-            <div class="gifContainer">
-              
+            <h2 class="yellow pp">< Personal Portfolio /></h2>
+            <div class="gifsContainer">
+              <div class="gifContainer">
+                <h3 class="blue">DealFinder
+                  <img src="./otherLogoAndImg/houseLogo.png" />
+                </h3>
+                <div id="dealfindergif" class="gif">
+                  <div class="gifText gif">
+                    <div id="gifTextInnerDiv">
+                      <button><img id="githubLogo" src="./stackLogo/githubW.png" /></button>
+                      <p>
+                        <span class="bold"
+                          >This app allows to <span class="blue">browse the history of real estate transactions</span> in all of France, with just an address and zipcode.</span
+                        >
+                      </p>
+
+                      <p class="vSmall"
+                        >Other features include <span class="underline">dragging the map</span> to find deals in other location,
+                        <span class="underline">filtering transactions</span> according to surface, price, etc..., <span class="underline">authenticating</span> to keep a record of
+                        your searches.</p
+                      >
+                      <p id="visitNowDeal"
+                        ><a class="bold blue rampart noUnderline" href="https://deal-finder-fr.herokuapp.com/">Visit now <span class="rampart">&nbsp;!</span></a></p
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="projectStackDiv">
+                  <h4 class="rampart">Stack</h4>
+                  <p><span class="bold">Client : </span>React, Material UI, google-map-react</p>
+                  <p><span class="bold">Server : </span>Node, Express, Passport, Node-postgres, Redis</p>
+                </div>
+              </div>
+              <div class="gifContainer">
+                <h3 class="red">Décodage Fiscal<img src="./otherLogoAndImg/decodage-logo-small.png"
+                /></h3>
+                <div id="decodagegif" class="gif">
+                  <div class="gifText gif">
+                    <div id="gifTextInnerDiv">
+                      <button><img id="githubLogo" src="./stackLogo/githubW.png" /></button>
+                      <p
+                        ><span class="bold"
+                          >This tax simulator was made to allow freelancers to <span class="red">choose between the three main entity types in France</span> (Micro-Entreprise,
+                          SARL, SAS).</span
+                        ></p
+                      >
+                      <p class="vSmall">Inputing data such as revenue, expenses, or marital status generates a complete picture of all compulsory taxations and financial flows.</p>
+                      <p id="tryDecodage"
+                        ><a class="bold red rampart noUnderline" href="https://deal-finder-fr.herokuapp.com/">Try it now<span class="rampart red">&nbsp;!</span></a></p
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="projectStackDiv">
+                  <h4 class="rampart">Stack</h4>
+                  <p><span class="bold">Client : </span>React, Material UI, google-map-react</p>
+                  <p><span class="bold">Server : </span>Node, Express, Passport, Node-postgres, Redis</p>
+                </div>
+              </div>
+
             </div>
           </section>
         </div>
-        <div class="section"><section id="contact"></section></div>
+        <div class="section" id="contactSection">
+          <section id="contact">
+            <div class="sectionText">
+              <h2 class="yellow">Contact</h2>
+              <p>Feel free to contact me for  any opportunities of employment or collaboration.</p></div
+            >
+            <div class="contactInfoContainer">
+              <div>
+                <p>Tel :</p>
+                <p>+33 7 51 21 26 93</p>
+              </div>
+              <div>
+                <p>Email :</p>
+                <p><a href="mailto:leoterrier22@gmail.com">leoterrier22@gmail.com</a></p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <script src="./script.js"></script>
