@@ -39,3 +39,5 @@ gifTexts.forEach((elt) => {
     elt.style.display = "block";
   });
 }); */
+
+document.querySelector(".githubsvg").getSVGDocument().getElementById("svgInternalID").setAttribute("fill", "#fff")
