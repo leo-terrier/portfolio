@@ -19,25 +19,4 @@ navLinks.forEach(elt => {
   });
 })
 
-const githubLogo = document.querySelectorAll("#githubLogo")
-githubLogo.forEach(elt => {
-  elt.addEventListener("mouseover", () => {
-    elt.src = "./stackLogo/github.png"
-  })
-  elt.addEventListener("mouseleave", () => {
-    elt.src = "./stackLogo/githubW.png"
-  })
-});
-/* const gifTexts = document.querySelectorAll(".gifText");
-gifTexts.forEach((elt) => {
-  elt.addEventListener("mouseover", () => {
-    console.log("hey");
-    elt.style.display = "none";
-  });
-  elt.addEventListener("mouseleave", () => {
-    console.log("ho");
-    elt.style.display = "block";
-  });
-}); */
-
 document.querySelector(".githubsvg").getSVGDocument().getElementById("svgInternalID").setAttribute("fill", "#fff")
