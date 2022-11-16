@@ -733,7 +733,7 @@ section {
 
   .gifText {
     height: 78%;
-    padding: .6rem .8rem;
+    padding: .7rem .9rem;
   }
   .linkDiv {
     bottom: 8px;}
@@ -746,10 +746,10 @@ section {
     top: 22%;
   }
   .gifTextInnerDiv p:nth-child(2) {
-    font-size: .90rem;
+    font-size: .93rem;
   }
   .gifTextInnerDiv p:nth-child(3) {
-    font-size: .71rem;
+    font-size: .76rem;
   }
 
   #contactInfoContainer div {
