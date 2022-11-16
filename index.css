@@ -484,14 +484,6 @@ section {
   max-width: 100%;
 }
 
-/* .stacksContainer p {
-  position: relative;
-}
-
-.stackContainer span {
-  position: absolute;
-  right: -12px;
-} */
 .basicK {
   margin-left: .6rem
 }
@@ -806,15 +798,6 @@ section {
   html {
     font-size: 16px;
   }
-
- /*  body {
-       background-image: url("./otherLogoAndImg/mobilebg.jpg");
-    background-attachment: scroll;
-    background-repeat: repeat;
-    background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  } */
 
   div.section {
     width: 97.5%;
