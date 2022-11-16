@@ -235,14 +235,16 @@ section {
   justify-content: center;
   position: relative;
 }
-
+.timelineGreaterDiv .sectionText {
+  padding: 30px 0
+}
 .timeEvent > p {
   color: white;
 }
 
 #dateContainer {
   position: relative;
-  height: 581px;
+  height: 485px;
   width: 64px;
   right: 0;
   margin: 0 30px;
@@ -293,7 +295,7 @@ section {
 }
 
 #timeline img {
-  height: 581px;
+  height: 485px;
   width: auto;
 }
 
@@ -357,23 +359,23 @@ section {
 }
 
 .justice {
-  top: 8%;
+  top: 7%;
   background-image: url("./otherLogoAndImg/justice.png");
 }
 
 .acasi {
-  top: 38%;
+  top: 37%;
   background-image: url("./otherLogoAndImg/acasi.png");
 }
 
 .codecademy {
-  top: 72%;
+  top: 71%;
   background-image: url("./otherLogoAndImg/codecademy.png");
   border: 1px solid white;
 }
 
 .wild {
-  top: 85%;
+  top: 84%;
   background-image: url("./otherLogoAndImg/wild.png");
 }
 
@@ -405,14 +407,14 @@ section {
 }
 
 .firstLines {
-  top: 60%;
+  top: 59%;
 }
 
 .portfolio1 {
-  top: 80%;
+  top: 79%;
 }
 .portfolio2 {
-  top: 90%;
+  top: 89%;
 }
 
 .sectionText {
@@ -421,7 +423,6 @@ section {
   width: 100%;
   min-height: 100%;
   max-height: 100%;
-  box-sizing: border-box;
 }
 .sectionText p {
   color: var(--gray);
@@ -727,6 +728,15 @@ section {
   }
 }
 
+.sectionText2 {
+  background-color: var(--darkBlueMidOpac);
+  padding: 60px 30px;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 1000px) {
 
   aside {
@@ -760,7 +770,7 @@ section {
   .timelineGreaterDiv {
     display: none;
   }
-  .sectionText {
+  .sectionText, .sectionText2 {
     width: 100%;
   }
   .stackLogoContainer {
