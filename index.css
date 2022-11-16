@@ -796,11 +796,11 @@ section {
     font-size: 16px;
   }
 
-  body {
-      /* background-image: url("./otherLogoAndImg/mobilebg.jpg"); */
+  /*body {
+       background-image: url("./otherLogoAndImg/mobilebg.jpg");
     background-attachment: scroll;
     background-repeat: repeat;
-  }
+  }*/
 
   div.section {
     width: 97.5%;
