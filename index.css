@@ -797,10 +797,9 @@ section {
   }
 
   body {
-      background-image: url("./otherLogoAndImg/mobilebg.jpg");
-   /* background-attachment: scroll;
+      /* background-image: url("./otherLogoAndImg/mobilebg.jpg"); */
+    background-attachment: scroll;
     background-repeat: repeat;
-    background-size: cover;*/
   }
 
   div.section {
