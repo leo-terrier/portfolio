@@ -19,4 +19,3 @@ navLinks.forEach(elt => {
   });
 })
 
-document.querySelector(".githubsvg").getSVGDocument().getElementById("svgInternalID").setAttribute("fill", "#fff")
