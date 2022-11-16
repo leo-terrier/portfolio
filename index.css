@@ -793,7 +793,7 @@ section {
   }
 
   body {
-    background-image: url("./otherLogoAndImg/mobilebg.jpg");
+    /* background-image: url("./otherLogoAndImg/mobilebg.jpg"); */
     background-attachment: scroll;
     background-repeat: repeat;
     background-size: cover;
